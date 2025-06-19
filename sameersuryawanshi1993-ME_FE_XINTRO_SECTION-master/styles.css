@@ -136,9 +136,9 @@ header {
   opacity: 1;
 }
 .mobile-menu {
-  display: none;
   position: fixed;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   width: 70vw;
   max-width: 320px;
   height: 100vh;
