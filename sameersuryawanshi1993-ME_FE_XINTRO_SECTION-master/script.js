@@ -1,6 +1,7 @@
 // Dropdown toggling for desktop and mobile
 function closeAllDropdowns() {
   document.querySelectorAll('.dropdown').forEach(drop => drop.classList.remove('open'));
+  document.querySelectorAll('.dropdown > .nav-link').forEach(btn => btn.classList.remove('link-open'));
 }
 
 document.querySelectorAll('.dropdown > .nav-link').forEach(btn => {
@@ -11,6 +12,7 @@ document.querySelectorAll('.dropdown > .nav-link').forEach(btn => {
     closeAllDropdowns();
     if (!isOpen) {
       parent.classList.add('open');
+      this.classList.add('link-open');
     }
   });
 });
